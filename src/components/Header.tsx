@@ -1,0 +1,22 @@
+import mafaliaLogo from "../assets/mafalia-logo.jpeg";
+
+export default function Header() {
+  return (
+    <header className="py-4">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
+          <img src={mafaliaLogo} alt="mafalia-logo" className="w-32 sm:w-40" />
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <button className="px-4 py-2 bg-gradient-to-r from-red-700 to-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition-colors">
+            Démarrer maintenant
+          </button>
+          <button className="px-4 py-2 border border-red-500 text-red-500 rounded-full text-sm font-medium hover:bg-red-50 transition-colors">
+            Se connecter
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+}
