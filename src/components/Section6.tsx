@@ -2,7 +2,7 @@ import homeIllustration from "../assets/home-illustration.jpg";
 
 export default function Section6() {
   return (
-    <section className="bg-white py-20 px-6 sm:px-12 lg:px-20">
+    <div>
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
         {/* Left Text Content */}
         <div className="w-full lg:w-1/2 space-y-6">
@@ -77,6 +77,6 @@ export default function Section6() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

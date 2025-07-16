@@ -13,7 +13,8 @@ import {
   OmnichannelIcon,
   WalletIcon,
 } from "../icons";
-type Feature = {
+import ServiceCard from "./ServiceCard";
+export type Feature = {
   title: string;
   description: string;
   icon: JSX.Element;
@@ -97,18 +98,7 @@ const Section2 = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md p-6 flex flex-col items-center text-center transition duration-200"
-            >
-              <div className="bg-red-50 p-3 rounded-full mb-4">
-                {feature.icon}
-              </div>
-              <h3 className="text-md font-semibold text-gray-900 mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-gray-600">{feature.description}</p>
-            </div>
+            <ServiceCard key={index} feature={feature} />
           ))}
         </div>
       </div>

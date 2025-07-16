@@ -6,6 +6,7 @@ import gmdLogo from "../assets/gmd-logo.png";
 import gdsLogo from "../assets/gds-logo.png";
 import timacareLogo from "../assets/tima-care-logo.png";
 import unileverLogo from "../assets/unilever-logo.png";
+import { Link } from "react-router";
 
 export default function Section1() {
   const companies = [
@@ -37,7 +38,8 @@ export default function Section1() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-10">
-            <button
+            <Link
+              to="/marketing"
               className="px-6 py-3 bg-gradient-to-r from-red-700 to-red-500 text-white rounded-full font-medium hover:bg-red-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
               aria-label="Demander une démo"
             >
@@ -55,7 +57,7 @@ export default function Section1() {
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-            </button>
+            </Link>
 
             <button className="px-4 py-2 border border-red-500 text-red-500 rounded-full text-sm font-medium hover:bg-red-50 transition-colors">
               Contacter nous
