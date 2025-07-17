@@ -1,8 +1,18 @@
 import { Link } from "react-router";
 import mafaliaLogo from "../assets/mafalia-logo.jpeg";
 import Footer from "../components/Footer";
+import {
+  CitySelect,
+  CountrySelect,
+  StateSelect,
+} from "react-country-state-city";
+import "react-country-state-city/dist/react-country-state-city.css";
+import { useState } from "react";
 
 const Register = () => {
+  const [country, setCountry] = useState(null);
+  const [currentState, setCurrentState] = useState(null);
+  const [currentCity, setCurrentCity] = useState(null);
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Main Content */}
@@ -131,23 +141,47 @@ const Register = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Pays *
                     </label>
-                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-200">
-                      <option>Choisir un pays</option>
-                      <option>Sénégal</option>
-                      <option>Mali</option>
-                      <option>Burkina Faso</option>
-                    </select>
+                    <CountrySelect
+                      containerClassName="form-group"
+                      inputClassName=""
+                      //@ts-ignore
+                      onChange={(_country) => setCountry(_country)}
+                      onTextChange={(_txt) => console.log(_txt)}
+                      placeHolder="Sélectionner un pays"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Région *
+                    </label>
+                    <StateSelect
+                      //@ts-ignore
+                      countryid={country?.id}
+                      containerClassName="form-group"
+                      inputClassName=""
+                      //@ts-ignore
+                      onChange={(_state) => setCurrentState(_state)}
+                      onTextChange={(_txt) => console.log(_txt)}
+                      //@ts-ignore
+                      defaultValue={currentState}
+                      placeHolder="Sélectionner une ville"
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Ville *
                     </label>
-                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-200">
-                      <option>Choisir une ville</option>
-                      <option>Dakar</option>
-                      <option>Thiès</option>
-                      <option>Saint-Louis</option>
-                    </select>
+                    <CitySelect
+                      //@ts-ignore
+                      countryid={country?.id}
+                      //@ts-ignore
+                      stateid={currentState?.id}
+                      //@ts-ignore
+                      onChange={(_city) => setCurrentCity(_city)}
+                      //@ts-ignore
+                      defaultValue={currentCity}
+                      placeHolder="Select City"
+                    />
                   </div>
                 </div>
               </div>
