@@ -1,22 +1,22 @@
 import homeIllustration from "../assets/home-illustration.jpg";
-import casamancaiseLogo from "../assets/casamancaise-logo.png";
-import senicoLogo from "../assets/senico-logo.png";
-import soboaLogo from "../assets/soboa-logo.png";
-import gmdLogo from "../assets/gmd-logo.png";
-import gdsLogo from "../assets/gds-logo.png";
-import timacareLogo from "../assets/tima-care-logo.png";
-import unileverLogo from "../assets/unilever-logo.png";
+import oroyalLogo from "../assets/oroyal-logo.jpg";
+import sonacosLogo from "../assets/sonacos-logo.jpg";
+import nestleLogo from "../assets/nestle-logo.jpg";
+import bictorysLogo from "../assets/bictorys-logo.jpg";
+import ILogo from "../assets/1.jpg";
+import OLogo from "../assets/2.jpg";
+import saprolaitLogo from "../assets/saprolait-logo.jpg";
 import { Link } from "react-router";
 
 export default function Section1() {
   const companies = [
-    { name: "ORoyal", logo: casamancaiseLogo },
-    { name: "Senico", logo: senicoLogo },
-    { name: "SOBOA", logo: soboaLogo },
-    { name: "GMD", logo: gmdLogo },
-    { name: "GDS", logo: gdsLogo },
-    { name: "Tima Care", logo: timacareLogo },
-    { name: "Unilever", logo: unileverLogo },
+    { name: "ORoyal", logo: oroyalLogo },
+    { name: "Sonacos", logo: sonacosLogo },
+    { name: "Nestle", logo: nestleLogo },
+    { name: "Bictorys", logo: bictorysLogo },
+    { name: "inconnu", logo: ILogo },
+    { name: "inconnu", logo: OLogo },
+    { name: "Saprolait", logo: saprolaitLogo },
   ];
   return (
     <div>

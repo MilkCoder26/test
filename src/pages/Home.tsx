@@ -16,7 +16,7 @@ export default function Home() {
         <Header />
 
         {/* Main Content */}
-        <main className="py-16 flex flex-col items-center gap-20">
+        <main className="py-16 flex flex-col items-center gap-20 overflow-hidden">
           <Section1 />
           <Section2 />
           <Section3 />
