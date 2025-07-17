@@ -10,7 +10,7 @@ import { Link } from "react-router";
 
 export default function Section1() {
   const companies = [
-    { name: "Casamançaise", logo: casamancaiseLogo },
+    { name: "ORoyal", logo: casamancaiseLogo },
     { name: "Senico", logo: senicoLogo },
     { name: "SOBOA", logo: soboaLogo },
     { name: "GMD", logo: gmdLogo },

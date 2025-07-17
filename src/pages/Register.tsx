@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import mafaliaLogo from "../assets/mafalia-logo.jpeg";
+import Footer from "../components/Footer";
 
 const Register = () => {
   return (
@@ -350,9 +351,7 @@ const Register = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-red-500 text-white text-center py-4">
-        <p className="text-sm">© 2024 Mafalia. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

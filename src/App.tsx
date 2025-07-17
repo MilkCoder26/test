@@ -1,34 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Section1 from "./components/Section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
-import Section7 from "./components/Section7";
+import Marketing from "./pages/Marketing";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Shared container */}
-      <div className="max-w-6xl mx-auto px-6">
-        <Header />
-
-        {/* Main Content */}
-        <main className="py-16 flex flex-col items-center gap-20">
-          <Section1 />
-          <Section2 />
-          <Section3 />
-          <Section4 />
-          <Section5 />
-          <Section6 />
-          <Section7 />
-        </main>
-      </div>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/marketing" element={<Marketing />} />
+        <Route path="/sign-in" element={<Login />} />
+        <Route path="/sign-up" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

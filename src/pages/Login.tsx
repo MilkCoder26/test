@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import mafaliaLogo from "../assets/mafalia-logo.jpeg";
+import Footer from "../components/Footer";
 
 const Login = () => {
   return (
@@ -103,11 +104,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-red-600 text-white text-center py-4">
-        <p className="text-sm">© 2024 Mafalia. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

@@ -1,79 +1,45 @@
 import React from "react";
 import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import mafaliaLogo from "../assets/mafalia-logo-dark.jpeg";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-to-r from-red-800 to-red-600 text-white text-sm pt-10">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Logo & Description */}
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Company Links */}
         <div>
-          <div className="mb-4">
-            <img src={mafaliaLogo} alt="Mafalia logo" className="h-6" />
-          </div>
-          <p className="leading-relaxed text-white/80">
-            La solution IA tout-en-un pour digitaliser votre commerce
-            alimentaire : POS – Paiement mobile – Gestion de stock – Financement
-            – Microsite web – Business Analyse.
-          </p>
-        </div>
-
-        {/* Produit */}
-        <div>
-          <h4 className="font-semibold mb-2">Produit</h4>
-          <ul className="space-y-1 text-white/80">
+          <h4 className="font-semibold mb-4">Entreprise</h4>
+          <ul className="space-y-2 text-white/80">
             <li>
-              <a href="#">Fonctionnalités</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Presse
+              </a>
             </li>
             <li>
-              <a href="#">Tarification</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Bridge+
+              </a>
             </li>
             <li>
-              <a href="#">Témoignages</a>
-            </li>
-            <li>
-              <a href="#">Nos équipements</a>
-            </li>
-            <li>
-              <a href="#">Marketing VAS</a>
-            </li>
-            <li>
-              <a href="#">FAQ</a>
+              <a href="#" className="hover:text-white transition-colors">
+                hangers Africa
+              </a>
             </li>
           </ul>
         </div>
 
-        {/* Entreprise */}
+        {/* Legal */}
         <div>
-          <h4 className="font-semibold mb-2">Entreprise</h4>
-          <ul className="space-y-1 text-white/80">
+          <h4 className="font-semibold mb-4">Légal</h4>
+          <ul className="space-y-2 text-white/80">
             <li>
-              <a href="#">À propos</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Conditions générales d'utilisation
+              </a>
             </li>
             <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Carrières</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Légal */}
-        <div>
-          <h4 className="font-semibold mb-2">Légal</h4>
-          <ul className="space-y-1 text-white/80">
-            <li>
-              <a href="#">Conditions d'utilisation</a>
-            </li>
-            <li>
-              <a href="#">Politique de confidentialité</a>
-            </li>
-            <li>
-              <a href="#">Cookies</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Politique de confidentialité
+              </a>
             </li>
           </ul>
         </div>
