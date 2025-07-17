@@ -76,7 +76,7 @@ export default function Section1() {
 
       <div className="mt-24 text-center">
         <p className="text-gray-800 font-medium mb-12 tracking-wide">
-          RECONNUS PAR 200+ ENTREPRISES, NOUS DIGITALISONS LES RESTAURANTS.
+          RECONNU PAR LES ENTREPRISES LES PLUS INFLUENTES DU SENEGAL.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center">
