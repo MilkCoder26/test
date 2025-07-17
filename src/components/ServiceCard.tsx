@@ -1,4 +1,4 @@
-import type { Feature } from "./Section2";
+import type { Feature } from "./HomeSection2";
 
 type ServicecardProps = {
   feature: Feature;

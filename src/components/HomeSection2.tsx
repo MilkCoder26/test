@@ -87,7 +87,7 @@ const Section2 = () => {
   return (
     <div>
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-amber-950 mb-4">
           Avec <span className="text-red-500">Mafalia</span>, passez à la
           vitesse supérieure
         </h2>

@@ -1,5 +1,5 @@
 import { LoanIcon, MobileIcon, OmnichannelIcon, POSIcon } from "../icons";
-import type { Feature } from "./Section2";
+import type { Feature } from "./HomeSection2";
 import ServiceCard from "./ServiceCard";
 
 export const features: Feature[] = [

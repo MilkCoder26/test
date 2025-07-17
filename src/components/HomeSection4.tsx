@@ -1,5 +1,11 @@
 import MarqueeRow from "./MarqueeRow";
 import TestimonialCard from "./TestimonialCard";
+import caesarLogo from "../assets/caesar-logo.png";
+import alafifaLogo from "../assets/al-afifa-logo.jpg";
+import exoticbeachLogo from "../assets/exotic-beach-logo.png";
+import laplanchaLogo from "../assets/la-plancha-logo.png";
+import leoLogo from "../assets/leo-logo.jpg";
+import lecarreLogo from "../assets/le-carre-logo.jpg";
 
 const Section4 = () => {
   const testimonials = [
@@ -10,7 +16,7 @@ const Section4 = () => {
       rating: 5,
       testimonial:
         "They has greatly saved my life and is still doing so! So I am highly appreciative of all Otter's services.",
-      logoColor: "bg-teal-600",
+      logo: leoLogo,
     },
     {
       name: "La Plancha",
@@ -19,7 +25,7 @@ const Section4 = () => {
       rating: 5,
       testimonial:
         "They has greatly saved my life and is still doing so! So I am highly appreciative of all Otter's services.",
-      logoColor: "bg-yellow-500",
+      logo: laplanchaLogo,
     },
     {
       name: "Exotik Beach",
@@ -28,7 +34,7 @@ const Section4 = () => {
       rating: 5,
       testimonial:
         "They has greatly saved my life and is still doing so! So I am highly appreciative of all Otter's services.",
-      logoColor: "bg-amber-700",
+      logo: exoticbeachLogo,
     },
     {
       name: "Al Afifa",
@@ -37,7 +43,7 @@ const Section4 = () => {
       rating: 5,
       testimonial:
         "They has greatly saved my life and is still doing so! So I am highly appreciative of all Otter's services.",
-      logoColor: "bg-blue-900",
+      logo: alafifaLogo,
     },
     {
       name: "Caesar's Lounge",
@@ -46,7 +52,7 @@ const Section4 = () => {
       rating: 5,
       testimonial:
         "They has greatly saved my life and is still doing so! So I am highly appreciative of all Otter's services.",
-      logoColor: "bg-red-600",
+      logo: caesarLogo,
     },
     {
       name: "Le Carre",
@@ -55,7 +61,7 @@ const Section4 = () => {
       rating: 5,
       testimonial:
         "They has greatly saved my life and is still doing so! So I am highly appreciative of all Otter's services.",
-      logoColor: "bg-orange-500",
+      logo: lecarreLogo,
     },
   ];
 

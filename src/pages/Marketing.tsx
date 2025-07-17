@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MarketingServices from "../components/MarketingServices";
 import RestaurantPartners from "../components/RestaurantPartners";
-import Section6 from "../components/Section6";
+import Section6 from "../components/HomeSection6";
 import BenefitsProgram from "../components/BenefitsProgram";
 import Partners from "../components/Partners";
 import MafaliaContactForm from "../components/MafaliaContact";

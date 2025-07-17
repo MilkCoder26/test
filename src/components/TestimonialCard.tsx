@@ -22,26 +22,23 @@ const TestimonialCard = ({
   businessType,
   rating = 5,
   testimonial,
-  logoColor = "bg-gray-200",
+  logo,
 }: {
   name: string;
   business: string;
   businessType: string;
   rating?: number;
   testimonial: string;
-  logoColor?: string;
+  logo: string;
 }) => (
-  <div className="flex-shrink-0 w-72 bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mx-2">
+  <div className="flex-shrink-0 w-72 bg-white rounded-2xl border border-gray-100 p-6 mx-2">
     <div className="flex items-center space-x-4 mb-4">
-      <div
-        className={`w-12 h-12 rounded-full ${logoColor} flex items-center justify-center`}
-      >
-        <span className="text-white font-bold text-sm">
-          {name
-            .split(" ")
-            .map((word) => word[0])
-            .join("")}
-        </span>
+      <div className="flex-shrink-0 flex justify-center items-center">
+        <img
+          src={logo}
+          alt="ndeye-image"
+          className="w-15 h-15 rounded-full shadow-lg object-cover"
+        />
       </div>
       <div>
         <h3 className="font-semibold text-gray-900">{name}</h3>
