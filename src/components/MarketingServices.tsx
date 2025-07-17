@@ -11,17 +11,20 @@ export const features: Feature[] = [
   },
   {
     title: "Création de contenu",
-    description: "Vente unifiée (boutique, mobile, web).",
+    description:
+      "Photos professionnelles, vidéos engageantes et textes optimisés pour vos réseaux sociaux et site web.",
     icon: <OmnichannelIcon className="w-10 h-10 text-red-600" />,
   },
   {
     title: "Camapgnes digitales locales",
-    description: "Accéder aux services de prêts pour le financement du BFR",
+    description:
+      "Publicités géociblées sur les plateformes pertinentes pour attirer une clientèle locale et fidèle.",
     icon: <LoanIcon className="w-10 h-10 text-red-600" />,
   },
   {
     title: "Gestion de vos pages",
-    description: "Gestion simple depuis le smartphone.",
+    description:
+      "Administration professionnelle de vos profils Google Business, Instagram et Facebook pour maximiser votre visibilité.",
     icon: <MobileIcon className="w-10 h-10 text-red-600" />,
   },
 ];

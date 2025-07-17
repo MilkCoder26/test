@@ -5,9 +5,9 @@ export default function Header() {
   return (
     <header className="py-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center justify-center">
+        <Link to="/" className="flex items-center justify-center">
           <img src={mafaliaLogo} alt="mafalia-logo" className="w-32 sm:w-40" />
-        </div>
+        </Link>
 
         <div className="flex items-center space-x-4">
           <button className="px-4 py-2 bg-gradient-to-r from-red-700 to-red-500 text-white rounded-full text-sm font-medium hover:bg-red-600 transition-colors">

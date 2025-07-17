@@ -1,19 +1,20 @@
-import caesarLogo from "../assets/caesar-logo.png";
-import alafifaLogo from "../assets/al-afifa-logo.jpg";
-import exoticbeachLogo from "../assets/exotic-beach-logo.png";
-import laplanchaLogo from "../assets/la-plancha-logo.png";
-import leoLogo from "../assets/leo-logo.jpg";
-import lecarreLogo from "../assets/le-carre-logo.jpg";
+import bakeliLogo from "../assets/bakeli-logo.jpg";
+import sonacosLogo from "../assets/sonacos-logo.jpg";
+import legacyLogo from "../assets/legacy-logo.jpg";
+import edenly from "../assets/edenly-logo.jpg";
+import kerbyLogo from "../assets/kerby-logo.jpg";
+import alrahmaLogo from "../assets/alrahma-logo.jpg";
+import lafLogo from "../assets/lafricamobile-logo.jpg";
 
 export default function Partners() {
   const companies = [
-    { name: "Bakeli", logo: leoLogo },
-    { name: "Sonacos", logo: caesarLogo },
-    { name: "Legacy Farms", logo: laplanchaLogo },
-    { name: "Edenly", logo: lecarreLogo },
-    { name: "Kerby", logo: exoticbeachLogo },
-    { name: "Alrahma", logo: alafifaLogo },
-    { name: "Lafricamobile", logo: caesarLogo },
+    { name: "Bakeli", logo: bakeliLogo },
+    { name: "Sonacos", logo: sonacosLogo },
+    { name: "Legacy Farms", logo: legacyLogo },
+    { name: "Edenly", logo: edenly },
+    { name: "Kerby", logo: kerbyLogo },
+    { name: "Alrahma", logo: alrahmaLogo },
+    { name: "Lafricamobile", logo: lafLogo },
   ];
   return (
     <div>
@@ -29,7 +30,7 @@ export default function Partners() {
           {companies.map((company, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center space-y-2 p-5 w-30 h-35 shadow-xl rounded-xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105"
+              className="group flex flex-col items-center space-y-2 p-5 w-30 h-40 shadow-xl rounded-xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105"
             >
               <div className="text-3xl opacity-60 group-hover:opacity-100 transition-opacity w-20 h-20 flex items-center justify-center">
                 <img src={company.logo} alt={company.logo} />
