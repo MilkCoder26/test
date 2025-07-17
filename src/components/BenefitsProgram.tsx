@@ -101,7 +101,9 @@ const BenefitsProgram = () => {
             className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
           >
             <div className="flex items-center mb-6">
-              <div className="flex-shrink-0 mr-4">{benefit.icon}</div>
+              <div className="flex-shrink-0 mr-4 bg-red-50 rounded-4xl p-2">
+                {benefit.icon}
+              </div>
               <h3 className="text-xl font-semibold text-gray-900 leading-tight">
                 {benefit.title}
               </h3>

@@ -48,7 +48,7 @@ export default function Section3() {
             />
 
             {/* Floating Satisfaction Badge */}
-            <div className="absolute top-4 -left-20 bg-white shadow-lg rounded-xl px-4 py-2 flex items-center gap-2 z-10">
+            <div className="absolute top-4 -left-20 bg-white shadow-lg rounded-xl px-4 py-2 flex items-center gap-2 z-10 animate-floatDown">
               <span className="text-red-500 font-bold text-lg bg-red-50 rounded-4xl p-2">
                 95%
               </span>
@@ -63,11 +63,11 @@ export default function Section3() {
           <div className="flex flex-col gap-6 h-[460px]">
             {/* Stats */}
             <div className="flex gap-4">
-              <div className="flex-1 bg-black text-white rounded-xl px-5 py-4 text-center shadow">
+              <div className="flex-1 bg-black text-white rounded-xl px-5 py-4 text-center shadow animate-floatUp">
                 <p className="text-2xl font-bold">10+</p>
                 <p className="text-sm">Années d’expérience</p>
               </div>
-              <div className="flex-1 bg-linear-to-r from-red-800 to-red-600 text-white rounded-xl px-5 py-4 text-center shadow">
+              <div className="flex-1 bg-linear-to-r from-red-800 to-red-600 text-white rounded-xl px-5 py-4 text-center shadow animate-floatDown">
                 <p className="text-2xl font-bold">1.2K</p>
                 <p className="text-sm">Clients heureux</p>
               </div>
@@ -80,7 +80,7 @@ export default function Section3() {
                 alt="Agriculteur"
                 className="w-full h-full object-cover rounded-xl"
               />
-              <div className="absolute bottom-4 -right-20 bg-white shadow-lg rounded-xl px-4 py-2 flex items-center gap-2">
+              <div className="absolute bottom-4 -right-10 bg-white shadow-lg rounded-xl px-4 py-2 flex items-center gap-2 animate-floatDown">
                 <span className="text-red-500 font-bold text-lg bg-red-50 rounded-4xl p-2">
                   95%
                 </span>

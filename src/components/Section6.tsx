@@ -61,14 +61,14 @@ export default function Section6() {
             />
 
             {/* Floating Cards */}
-            <div className="absolute top-4 right-4 bg-white shadow-md px-4 py-2 rounded-xl text-xs text-gray-700 font-medium">
+            <div className="absolute top-4 right-4 bg-white shadow-md px-4 py-2 rounded-xl text-xs text-gray-700 font-medium animate-floatDown">
               <span className="text-red-500 font-bold">95%</span> Taux de
               satisfaction
               <br />
               <span className="text-[10px] text-gray-400">de nos clients</span>
             </div>
 
-            <div className="absolute -bottom-5 left-4 bg-white shadow-md px-4 py-2 rounded-xl text-xs text-gray-700 font-medium">
+            <div className="absolute -bottom-5 left-4 bg-white shadow-md px-4 py-2 rounded-xl text-xs text-gray-700 font-medium animate-floatUp">
               <span className="text-red-500 font-bold">95%</span> Taux de
               satisfaction
               <br />

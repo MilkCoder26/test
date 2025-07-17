@@ -4,7 +4,7 @@ import sonacosLogo from "../assets/sonacos-logo.jpg";
 import nestleLogo from "../assets/nestle-logo.jpg";
 import bictorysLogo from "../assets/bictorys-logo.jpg";
 import ILogo from "../assets/1.jpg";
-import OLogo from "../assets/2.jpg";
+import kerbyLogo from "../assets/kerby-logo.jpg";
 import saprolaitLogo from "../assets/saprolait-logo.jpg";
 import { Link } from "react-router";
 
@@ -15,7 +15,7 @@ export default function Section1() {
     { name: "Nestle", logo: nestleLogo },
     { name: "Bictorys", logo: bictorysLogo },
     { name: "inconnu", logo: ILogo },
-    { name: "inconnu", logo: OLogo },
+    { name: "Kerby", logo: kerbyLogo },
     { name: "Saprolait", logo: saprolaitLogo },
   ];
   return (
@@ -83,10 +83,14 @@ export default function Section1() {
           {companies.map((company, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center space-y-2 p-5 w-30 h-35 shadow-xl rounded-xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105"
+              className="group flex flex-col items-center justify-center text-center p-5 w-36 h-40 bg-white shadow-xl rounded-xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105"
             >
-              <div className="text-3xl opacity-60 group-hover:opacity-100 transition-opacity">
-                <img src={company.logo} alt={company.logo} />
+              <div className="w-16 h-16 mb-3 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity">
+                <img
+                  src={company.logo}
+                  alt={company.name}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors">
                 {company.name}

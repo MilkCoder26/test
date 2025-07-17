@@ -3,6 +3,8 @@
 @theme {
   --animate-marqueeLeft: marqueeLeft 30s linear infinite;
   --animate-marqueeRight: marqueeRight 30s linear infinite;
+  --animate-floatUp: slideUpDown 4s ease-in-out infinite;
+  --animate-floatDown: slideDownUp 4s ease-in-out infinite;
   @keyframes marqueeLeft {
     0% {
       transform: translateX(0%);
@@ -17,6 +19,22 @@
     }
     100% {
       transform: translateX(50%);
+    }
+  }
+  @keyframes slideUpDown {
+    0% 100% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+  @keyframes slideDownUp {
+    0% 100% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(12px);
     }
   }
 }
