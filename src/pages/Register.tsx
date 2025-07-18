@@ -8,11 +8,16 @@ import {
 } from "react-country-state-city";
 import "react-country-state-city/dist/react-country-state-city.css";
 import { useState } from "react";
+import { usePlacesWidget } from "react-google-autocomplete";
 
 const Register = () => {
   const [country, setCountry] = useState(null);
   const [currentState, setCurrentState] = useState(null);
   const [currentCity, setCurrentCity] = useState(null);
+  const { ref } = usePlacesWidget({
+    apiKey: "AIzaSyBEQsrvytkTANgOreiZ5wycKD_660Iem6I",
+    onPlaceSelected: (place) => console.log(place),
+  });
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Main Content */}
@@ -217,6 +222,7 @@ const Register = () => {
                       Nom de l'entreprise *
                     </label>
                     <input
+                      ref={ref}
                       type="text"
                       placeholder="Nom de votre entreprise"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-200"
