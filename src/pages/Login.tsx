@@ -6,6 +6,26 @@ const Login = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Main Content */}
+      <div className="px-4 py-4">
+        <Link
+          to="/"
+          className="group cursor-pointer flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-gray-50"
+        >
+          <svg
+            className="w-6 h-6 text-red-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+        </Link>
+      </div>
       <div className="flex-1 flex items-center justify-center py-12 px-4">
         <div className="max-w-md w-full">
           {/* Logo */}
